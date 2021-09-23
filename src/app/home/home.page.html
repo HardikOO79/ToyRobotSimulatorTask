@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="center">
+      Toy-Robot Simulator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-margin">
+    <app-place-init (actionClick)="actionClicked($event);"></app-place-init>
+    <app-step-action [actionType]="actionTypes.Move" (actionClick)="actionClicked($event);"></app-step-action>
+    <app-step-action [actionType]="actionTypes.Left" (actionClick)="actionClicked($event);"></app-step-action>
+    <app-step-action [actionType]="actionTypes.Right" (actionClick)="actionClicked($event);"></app-step-action>
+    <app-step-action [actionType]="actionTypes.Report" (actionClick)="actionClicked($event);"></app-step-action>
+
+    <div *ngIf="actionService.actions.length>0" class="ion-text-center ion-margin-top">
+      <ion-button color="secondary" expand="block" (click)="performActions()">Perform Actions</ion-button>
+      <h3>Action List</h3>
+      <ion-grid>
+        <ion-row *ngFor="let action of actionService.actions;let i = index">
+          <ion-col>
+            <div>
+              {{i+1}}. {{actionTypes[action.actionType]}}
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngIf="actionService.reports.length>0" class="ion-text-center">
+      <h3>Report List</h3>
+      <ion-grid>
+        <ion-row *ngFor="let report of actionService.reports">
+          <ion-col>
+            <div>
+              {{report}}
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
