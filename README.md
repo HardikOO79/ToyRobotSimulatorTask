@@ -1,9 +1,9 @@
 # Coding Challenge
 
 
-Toy Robot Simulator
+### Toy Robot Simulator
 
-Description
+#### Description
 
 ● The application is a simulation of a toy robot moving on a square tabletop, of
 dimensions 5 units x 5 units.
@@ -49,7 +49,7 @@ stack you use)
 
 ● Provide test data to exercise the application.
 
-Constraints:
+#### Constraints:
 
 ● The toy robot must not fall off the table during movement. This also includes the
 initial placement of the toy robot.
@@ -57,7 +57,7 @@ initial placement of the toy robot.
 ● Any move that would cause the robot to fall must be ignored.
 
 ○ Example Input and Output:
-i. PLACE 0,0,NORTH
+#### i. PLACE 0,0,NORTH
 
 MOVE
 
@@ -66,7 +66,7 @@ REPORT
 Output: 0,1,NORTH
 
 
-ii. PLACE 0,0,NORTH
+#### ii. PLACE 0,0,NORTH
 
 LEFT
 
@@ -75,7 +75,7 @@ REPORT
 Output: 0,0,WEST
 
 
-iii. PLACE 1,2,EAST
+#### iii. PLACE 1,2,EAST
 
 MOVE
 
@@ -89,7 +89,7 @@ REPORT
 
 Output: 3,3,NORTH
 
-## Project installation and start up commands
+### Project installation and start up commands
 
 ● npm install
 
