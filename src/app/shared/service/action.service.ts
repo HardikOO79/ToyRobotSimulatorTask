@@ -20,7 +20,7 @@ export class ActionService {
         this.robotPlaced = false;
     }
 
-    executeactions = (): boolean => {
+    executeActions = (): boolean => {
 
         if (this.actions.length) {
 

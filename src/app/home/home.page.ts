@@ -16,6 +16,6 @@ export class HomePage {
 
   //Peform actions to display result
   performActions(): void {
-    this.actionService.executeactions();
+    this.actionService.executeActions();
   }
 }
