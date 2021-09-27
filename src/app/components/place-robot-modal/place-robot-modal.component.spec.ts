@@ -2,7 +2,7 @@ import { DebugElement } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
-import { AlertController, IonicModule, ModalController } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 import { PlaceRobotModalComponent } from './place-robot-modal.component';
 
 
@@ -11,6 +11,7 @@ describe('PlaceRobotModalComponent', () => {
   let fixture: ComponentFixture<PlaceRobotModalComponent>;
   let de: DebugElement;
   let el: HTMLElement;
+  
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [PlaceRobotModalComponent],
